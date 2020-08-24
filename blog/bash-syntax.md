@@ -1,0 +1,13 @@
+---
+layout: post
+title: Bash Syntax
+excerpt: Notes
+---
+
+2>&1
+
+2 - stderr.
+
+> - redirection.
+
+&1 - the target of the redirection should be the same location as the first file descriptor, i.e. stdout.
