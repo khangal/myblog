@@ -2,6 +2,7 @@
 layout: post
 title: Bash Syntax
 excerpt: Notes
+note: true
 ---
 
 2>&1

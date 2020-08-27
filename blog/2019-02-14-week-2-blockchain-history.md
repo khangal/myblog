@@ -3,6 +3,7 @@ layout: post
 title: "Week 2: Blockchain History"
 excerpt: From the Cypherpunk Movement to JP Morgan Chase
 date: 2019-02-14
+note: true
 ---
 
 ## I. Pre-Bitcoin: Libertarian Dreams

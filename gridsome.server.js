@@ -7,6 +7,15 @@
 
 module.exports = function (api) {
   api.loadSource(({ addCollection }) => {
+    if (process.env.NODE_ENV === 'production') {
+      const posts = store.getContentType('Post')
+
+      posts.data().forEach(node => {
+        if (node.note) {
+          posts.removeNode(node.id)
+        }
+      })
+    }
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   })
 

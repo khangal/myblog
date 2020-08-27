@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unicode and character sets
-date:   2017-11-24 18:32:12 +0800
+date:   2017-11-24
 excerpt: Notes take from Joel Spolsky's blog post
 ---
 

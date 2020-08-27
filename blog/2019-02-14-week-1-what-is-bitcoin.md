@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Week 1 homework: What is bitcoin?"
+note: true
 ---
 
 Bitcoin is built to transact peer to peer without central entity (bank).
