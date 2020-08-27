@@ -2,9 +2,9 @@
   <Layout>
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
 
-      <div style="margin:5.5rem 0">
+      <div class="text--center" style="margin:5.5rem 0">
+        <g-image alt="Example image" src="@/assets/images/5Khangal.jpg" style="border-radius:10px; width:125px" />
         <h1 class="name">Hi, I'm Khangal</h1>
 
         <p class="intro">I'm web developer, and this is blog about <span
@@ -26,11 +26,6 @@
       </li>
     </ul>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
   </Layout>
 </template>
 
@@ -42,9 +37,55 @@ export default {
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
+<style lang="scss" scoped>
+.mini-posts {
+  list-style: none;
+  margin-left: 0;
+}
+
+.mini-post {
+  border-bottom: 1px solid #f0f0f2;
+  padding-bottom: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.mini-post__title {
+  font-size: 1.75rem;
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.post__title {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $dark-text-color;
+}
+
+.post__body {
+  margin-bottom: 5rem;
+
+  h2 {
+    font-weight: bold;
+    margin-top: 2.5rem;
+    margin-bottom: 1.7rem;
+  }
+
+  p {
+    margin-bottom: 1.7rem;
+  }
+}
+
+.text--center {
+  text-align: center;
 }
 </style>
 
