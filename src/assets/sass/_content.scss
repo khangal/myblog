@@ -1,0 +1,61 @@
+@import "./_variables.scss";
+
+.post__content {
+  max-width: 700px;
+  font-size: 18px;
+  color: rgb(23, 25, 29);
+}
+
+.post__content /deep/ {
+  p {
+    position: relative;
+    // background-color: red;
+    margin: 0.375em 0px 1.5em;
+  }
+
+  h2 {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h2, h3 {
+    margin: 1.7em 0px 0.8em;
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 4em 0px;
+    list-style-type: none;
+    list-style-position: inside
+  }
+
+  hr {
+    height: 1px;
+    border-width: 0;
+    color: $line-color;
+    background-color: $line-color;
+    margin: 70px 0px 60px;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: calc(2em + 8px);
+    margin: 0.375em 0px 1.5em;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 0px;
+      clip-path: polygon(0px 0px, 100% 0px, 100% 100%);
+      background: $vim-color;
+    }
+  }
+}
