@@ -6,12 +6,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
+  api.loadSource((store) => {
     if (process.env.NODE_ENV === 'production') {
       const posts = store.getContentType('Post')
 
       posts.data().forEach(node => {
-        if (node.note) {
+        if (node.note === true) {
           posts.removeNode(node.id)
         }
       })

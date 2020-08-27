@@ -3,6 +3,7 @@ layout: post
 title: "Week 4: Bitcoin in Real Life"
 excerpt: "Wallet Mechanics, Mining, & More"
 date: 2019-02-15
+note: true
 ---
 
 ## Types of Users
