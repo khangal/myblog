@@ -4,7 +4,7 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
       <div class="text--center" style="margin:5.5rem 0">
-        <g-image alt="Example image" src="@/assets/images/5Khangal.jpg" style="border-radius:10px; width:125px" />
+        <g-image alt="Example image" src="@/assets/images/5Khangalx300.jpg" style="border-radius:10px; width:125px" />
         <h1 class="name">Hi, I'm Khangal</h1>
 
         <p class="intro">I'm web developer, and this is blog about <span
