@@ -7,8 +7,7 @@
         <g-image alt="Example image" src="@/assets/images/5Khangalx300.jpg" style="border-radius:10px; width:125px" />
         <h1 class="name">Hi, I'm Khangal</h1>
 
-        <p class="intro">I'm web developer, and this is blog about <span
-           class="rails">Rails</span>, <span class="elixir">Elixir</span>, <span class="vim">Vim</span> stuff</p>
+        <p class="intro">I write about stuff I learned here.</p>
       </div>
 
 
