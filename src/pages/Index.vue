@@ -21,7 +21,7 @@
 
             <p class="mini-post__teaser">{{ edge.node.excerpt  }}</p>
 
-            <span class="post-meta">{{ edge.node.date }}</span>
+            <span class="post-meta text--subdued">{{ edge.node.date | dateFormat }}</span>
           </li>
       </li>
     </ul>

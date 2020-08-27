@@ -3,6 +3,7 @@ layout: post
 title: Code Smells
 excerpt: Tech Club
 date: 2020-05-11
+note: true
 ---
 
 # Layout

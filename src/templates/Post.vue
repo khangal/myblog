@@ -5,15 +5,11 @@
       <header class="post-header">
         <h1 class="post__title liquid-h1">{{ $page.post.title }}</h1>
         <p class="post-meta text--center">
-          <time class="dt-published">
-            {{ $page.post.date }}
+          <time class="dt-published text--subdued">
+            {{ $page.post.date | dateFormat }}
           </time>
         </p>
       </header>
-
-      <div class="mt-5">
-        bambambambambam
-      </div>
 
       <div v-html="$page.post.content" class="post__content"></div>
 
