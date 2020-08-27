@@ -24,6 +24,8 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: "Khangal's Blog",
+  siteUrl: "https://khangal.github.io",
+  pathPrefix: "/khangal.github.io",
   plugins: [
     {
       use: '@gridsome/source-filesystem',
