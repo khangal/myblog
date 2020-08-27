@@ -11,3 +11,9 @@
 .rails {
   color: $rails-color;
 }
+
+@for $i from 1 through 5 {
+  .mt-#{$i} {
+    margin-top: $spacing * $i;
+  }
+}

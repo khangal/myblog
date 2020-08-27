@@ -5,7 +5,7 @@ date:   2017-11-24 18:32:12 +0800
 excerpt: Notes take from Joel Spolsky's blog post
 ---
 
-## ASCII
+### ASCII
 
 ASCII 7bit (128 hurtelh decimal too)
 - 32-s baga temdegtuud ni unprintable
@@ -52,5 +52,7 @@ In UTF-8, every code point from 0-127 is stored in a single byte.
 Only code points 128 and above are stored using 2, 3, in fact, up to 6 bytes.
 
 U+0048 U+0065 U+006C U+006C U+006F stored as 48 65 6C 6C 6F
+
+---
 
 ### TL;DR just use utf-8
