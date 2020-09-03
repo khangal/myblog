@@ -2,6 +2,7 @@
 layout: post
 excerpt: Vim learning tips
 date: 2018-06-15
+tags: ['vim']
 ---
 
 ## Why vim?
@@ -12,7 +13,8 @@ date: 2018-06-15
 ## 1. Watch this video
 <iframe width="668" height="380" src="https://www.youtube.com/embed/OnUiHLYZgaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Summary
+Video summary:
+
 1. Do the vimtutor.
 2. Stay out of insert mode, stay in normal mode.
 3. Don't use arrow keys, use 'h, j, k, l'
@@ -27,13 +29,14 @@ There's bunch of plugin managers like (pathogen, Vundle, vim-plug).
 I recommend using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ## 3. Essential plugin list
-- Some kind of fuzzy search: [ctrlp](https://github.com/kien/ctrlp.vim)
+- Some kind of fuzzy search: preferrably [fzf](https://github.com/junegunn/fzf.vim), [ctrlp](https://github.com/kien/ctrlp.vim)
 - [surround.vim](https://github.com/tpope/vim-surround)
 - For project explorer: netrw + [vim-vinegar](https://github.com/tpope/vim-vinegar)
   (netrw is vim's built in project explorer)
 
 ## 4. Advancedish
 - Use relative number
+- Use [vim-fugitive](https://github.com/tpope/vim-fugitive) to work with git.
 
 ## 5. My vim configuration
   Mine is based on [thoughtbots dotfiles](https://github.com/thoughtbot/dotfiles)

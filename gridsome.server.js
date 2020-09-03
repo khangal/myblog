@@ -7,9 +7,9 @@
 
 module.exports = function (api) {
   api.loadSource((store) => {
-    if (process.env.NODE_ENV === 'production') {
-      const posts = store.getContentType('Post')
+    const posts = store.getCollection('Post')
 
+    if (process.env.NODE_ENV === 'production') {
       posts.data().forEach(node => {
         if (node.note === true) {
           posts.removeNode(node.id)

@@ -1,10 +1,10 @@
-$accent-color: #e13b41;
-$text-color: #454547;
-$dark-text-color: #29292c;
-
 $vim-color: #019833;
 $elixir-color: #4e2a8e;
 $rails-color: #cc0000;
 $line-color: rgb(199, 199, 199);
+
+$accent-color: $vim-color;
+$text-color: rgb(23, 25, 29);
+$dark-text-color: #29292c;
 
 $spacing: 0.375em;

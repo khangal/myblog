@@ -1,9 +1,9 @@
 ---
+title: CS50 AI Lecture 0
 date: 2020-09-02
 note: true
+tags: ["CS50AI"]
 ---
-
-# CS50 AI Lecture 0
 
 ## Search problems
 

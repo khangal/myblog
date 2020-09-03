@@ -31,9 +31,21 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
-        typeName: 'Post'
+        typeName: 'Post',
+        refs: {
+          tags: {
+            typeName: 'Tag'
+          }
+        }
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'tags/**/*.md',
+        typeName: 'Tag'
       }
-    }
+    },
   ],
   transformers: {
     remark: {

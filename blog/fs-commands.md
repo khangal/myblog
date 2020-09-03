@@ -2,6 +2,7 @@
 layout: post
 title: fs-commands
 excerpt: Notes
+note: true
 ---
 
 lsblk - list block devices
