@@ -11,12 +11,17 @@
     <!-- </nav> -->
 
     <article class="post h-entry" style="margin-top:3rem">
+      <nav class="tags">
+        <g-link :to="tag.path" class="tag-link" v-for="tag in $page.post.tags" :key="tag.id">
+          {{ tag.title }}
+        </g-link>
+      </nav>
 
       <header class="post-header">
-        <h1 class="post__title liquid-h1">{{ $page.post.title }}</h1>
+        <h1 class="post__title liquid-h1" style="margin-bottom:0.5rem">{{ $page.post.title }}</h1>
         <p class="post-meta text--center">
           <time class="dt-published text--subdued">
-            {{ $page.post.date | dateFormat }}
+            {{ $page.post.date | dateFormat }} <span v-if="$page.post.note === true">• draft</span>
           </time>
         </p>
       </header>
@@ -39,6 +44,25 @@
   border-bottom: 1px solid #d2d2d2;
   border-top: 1px solid #d2d2d2;
 }
+
+.tags {
+  line-height: 1.5;
+}
+
+.tag-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid $text-color;
+
+  &:hover {
+    color: $accent-color;
+    border-bottom-color: $accent-color;
+  }
+
+  &:not(:last-child) {
+    margin-right: calc(1em + 8px);
+  }
+}
 </style>
 
 <script>
@@ -60,6 +84,11 @@ query ($id: ID!) {
     date
     path
     content
+    note
+    tags {
+      title
+      path
+    }
   }
 }
 </page-query>

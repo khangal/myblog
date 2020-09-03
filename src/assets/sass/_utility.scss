@@ -12,6 +12,10 @@
   color: $rails-color;
 }
 
+.accent {
+  color: $accent-color;
+}
+
 @for $i from 1 through 5 {
   .mt-#{$i} {
     margin-top: $spacing * $i;
