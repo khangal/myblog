@@ -21,7 +21,7 @@
         <h1 class="post__title liquid-h1" style="margin-bottom:0.5rem">{{ $page.post.title }}</h1>
         <p class="post-meta text--center">
           <time class="dt-published text--subdued">
-            {{ $page.post.date | dateFormat }} <span v-if="$page.post.note === true">• draft</span>
+            {{ $page.post.date | dateFormat }}
           </time>
         </p>
       </header>
@@ -84,7 +84,6 @@ query ($id: ID!) {
     date
     path
     content
-    note
     tags {
       title
       path
