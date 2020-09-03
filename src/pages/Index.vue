@@ -21,7 +21,7 @@
 
           <p class="mini-post__teaser">{{ edge.node.excerpt  }}</p>
 
-          <span class="post-meta text--subdued">{{ edge.node.date | dateFormat }} <span v-if="edge.node.note === true">• draft</span></span>
+          <span class="post-meta text--subdued">{{ edge.node.date | dateFormat }}</span>
         </li>
         </li>
       </ul>
@@ -100,7 +100,6 @@ query Posts {
         date
         excerpt
         path
-        note
       }
     }
   }
