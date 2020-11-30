@@ -11,11 +11,11 @@
     <!-- </nav> -->
 
     <article class="post h-entry" style="margin-top:3rem">
-      <nav class="tags">
-        <g-link :to="tag.path" class="tag-link" v-for="tag in $page.post.tags" :key="tag.id">
-          {{ tag.title }}
-        </g-link>
-      </nav>
+      <!-- <nav class="tags"> -->
+      <!--   <g-link :to="tag.path" class="tag-link" v-for="tag in $page.post.tags" :key="tag.id"> -->
+      <!--     {{ tag.title }} -->
+      <!--   </g-link> -->
+      <!-- </nav> -->
 
       <header class="post-header">
         <h1 class="post__title liquid-h1" style="margin-bottom:0.5rem">{{ $page.post.title }}</h1>
@@ -84,10 +84,6 @@ query ($id: ID!) {
     date
     path
     content
-    tags {
-      title
-      path
-    }
   }
 }
 </page-query>
