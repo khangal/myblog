@@ -25,14 +25,16 @@ gsettings reset-recursively SCHEMA [:PATH]
 ```
 
 Example:
+
 ```bash
 gsettings reset org.gnome.desktop.wm.keybindings panel-main-menu
 ```
 
-
 # Now for the fun stuff
+
 https://unix.stackexchange.com/questions/388238/how-to-set-super-windows-key-to-show-all-applications-menu-in-gnome-de
 
+disable alt+f1
 ```bash
 gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "[]"
 ```
